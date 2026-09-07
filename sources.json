@@ -1,0 +1,68 @@
+{
+  "showdownPokedex": {
+    "path": "data/showdown-pokedex.json",
+    "url": "https://play.pokemonshowdown.com/data/pokedex.json",
+    "required": true
+  },
+  "showdownMoves": {
+    "path": "data/showdown-moves.json",
+    "url": "https://play.pokemonshowdown.com/data/moves.json",
+    "required": true
+  },
+  "showdownItems": {
+    "path": "data/showdown-items.json",
+    "url": "https://play.pokemonshowdown.com/data/items.js",
+    "transform": "showdown-items-js-to-json",
+    "required": true
+  },
+  "championsMoves": {
+    "path": "data/champions-moves.ts",
+    "url": "https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/mods/champions/moves.ts",
+    "required": true
+  },
+  "championsItems": {
+    "path": "data/champions-items.ts",
+    "url": "https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/mods/champions/items.ts",
+    "required": true
+  },
+  "speciesNamesCsv": {
+    "path": "data/pokemon_species_names.csv",
+    "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/pokemon_species_names.csv",
+    "required": true
+  },
+  "movesCsv": {
+    "path": "data/moves.csv",
+    "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/moves.csv",
+    "required": true
+  },
+  "moveNamesCsv": {
+    "path": "data/move_names.csv",
+    "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/move_names.csv",
+    "required": true
+  },
+  "itemsCsv": {
+    "path": "data/items.csv",
+    "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/items.csv",
+    "required": true
+  },
+  "itemNamesCsv": {
+    "path": "data/item_names.csv",
+    "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/item_names.csv",
+    "required": true
+  },
+  "abilitiesCsv": {
+    "path": "data/abilities.csv",
+    "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/abilities.csv",
+    "required": true
+  },
+  "abilityNamesCsv": {
+    "path": "data/ability_names.csv",
+    "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/ability_names.csv",
+    "required": true
+  },
+  "legacyKoreanNames": {
+    "path": "data/korean_names.txt",
+    "url": "https://raw.githubusercontent.com/jayckaiser/korean-pokemon/master/korean_pokemon/names/ko.txt",
+    "required": false
+  }
+}
