@@ -15,6 +15,18 @@
     "url": "https://play.pokemonshowdown.com/data/moves.json",
     "required": true
   },
+  "showdownAbilities": {
+    "path": "data/showdown-abilities.json",
+    "url": "https://play.pokemonshowdown.com/data/abilities.js",
+    "transform": "showdown-abilities-js-to-json",
+    "required": true
+  },
+  "championsLearnsets": {
+    "path": "data/champions-learnsets.json",
+    "url": "https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/mods/champions/learnsets.ts",
+    "transform": "champions-learnsets-ts-to-json",
+    "required": true
+  },
   "showdownItems": {
     "path": "data/showdown-items.json",
     "url": "https://play.pokemonshowdown.com/data/items.js",
@@ -46,6 +58,12 @@
     "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/move_names.csv",
     "required": true
   },
+  "moveFlavorKo": {
+    "path": "data/move-flavor-ko.json",
+    "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/move_flavor_text.csv",
+    "transform": "pokeapi-korean-flavor-to-json",
+    "required": true
+  },
   "itemsCsv": {
     "path": "data/items.csv",
     "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/items.csv",
@@ -64,6 +82,12 @@
   "abilityNamesCsv": {
     "path": "data/ability_names.csv",
     "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/ability_names.csv",
+    "required": true
+  },
+  "abilityFlavorKo": {
+    "path": "data/ability-flavor-ko.json",
+    "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/ability_flavor_text.csv",
+    "transform": "pokeapi-korean-flavor-to-json",
     "required": true
   },
   "legacyKoreanNames": {

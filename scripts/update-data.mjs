@@ -15,6 +15,70 @@ const dataVersion = `${today}.${oldSerial + 1}`;
 const files = {};
 const failures = [];
 
+function parseCsv(text) {
+  const rows = [];
+  let row = [], field = '', quoted = false;
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (quoted) {
+      if (ch === '"' && text[i + 1] === '"') { field += '"'; i++; }
+      else if (ch === '"') quoted = false;
+      else field += ch;
+    } else if (ch === '"') quoted = true;
+    else if (ch === ',') { row.push(field); field = ''; }
+    else if (ch === '\n') { row.push(field.replace(/\r$/, '')); rows.push(row); row = []; field = ''; }
+    else field += ch;
+  }
+  if (field || row.length) { row.push(field); rows.push(row); }
+  return rows;
+}
+
+function transformBytes(transform, bytes) {
+  if (!transform) return bytes;
+  const text = bytes.toString('utf8');
+  if (transform === 'showdown-items-js-to-json' || transform === 'showdown-abilities-js-to-json') {
+    const sandbox = { exports: {} };
+    vm.runInNewContext(text, sandbox, { timeout: 10_000 });
+    const data = transform === 'showdown-items-js-to-json'
+      ? sandbox.exports.BattleItems : sandbox.exports.BattleAbilities;
+    if (!data) throw new Error('Showdown export was not found');
+    return Buffer.from(JSON.stringify(data));
+  }
+  if (transform === 'champions-learnsets-ts-to-json') {
+    const sandbox = { exports: {} };
+    const runnable = text.replace(
+      /export const Learnsets:[^=]+=/,
+      'exports.Learnsets ='
+    );
+    vm.runInNewContext(runnable, sandbox, { timeout: 20_000 });
+    if (!sandbox.exports.Learnsets) throw new Error('Champions Learnsets export was not found');
+    const compact = {};
+    for (const [species, entry] of Object.entries(sandbox.exports.Learnsets)) {
+      if (entry?.learnset) compact[species] = Object.keys(entry.learnset).sort();
+    }
+    return Buffer.from(JSON.stringify(compact));
+  }
+  if (transform === 'pokeapi-korean-flavor-to-json') {
+    const rows = parseCsv(text);
+    const latest = {};
+    for (const row of rows.slice(1)) {
+      const [objectId, versionGroupId, languageId, flavorText] = row;
+      if (languageId !== '3' || !objectId || !flavorText) continue;
+      const version = Number(versionGroupId) || 0;
+      if (!latest[objectId] || version >= latest[objectId].version) {
+        latest[objectId] = {
+          version,
+          text: flavorText.replace(/\s+/g, ' ').trim()
+        };
+      }
+    }
+    return Buffer.from(JSON.stringify(Object.fromEntries(
+      Object.entries(latest).map(([id, value]) => [id, value.text])
+    )));
+  }
+  throw new Error(`Unknown transform: ${transform}`);
+}
+
 async function download(key, source) {
   try {
     const response = await fetch(source.url, {
@@ -23,12 +87,7 @@ async function download(key, source) {
     });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     let bytes = Buffer.from(await response.arrayBuffer());
-    if (source.transform === 'showdown-items-js-to-json') {
-      const sandbox = { exports: {} };
-      vm.runInNewContext(bytes.toString('utf8'), sandbox, { timeout: 10_000 });
-      if (!sandbox.exports.BattleItems) throw new Error('BattleItems was not found');
-      bytes = Buffer.from(JSON.stringify(sandbox.exports.BattleItems));
-    }
+    bytes = transformBytes(source.transform, bytes);
     const destination = path.join(root, source.path);
     const temporary = `${destination}.tmp`;
     await mkdir(path.dirname(destination), { recursive: true });

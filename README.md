@@ -20,6 +20,13 @@ GitHub Actions가 매일 한국시간 오전 3시 17분경 원본 자료를 확�
 달라지면 `data` 파일과 `manifest.json`이 함께 갱신됩니다. 앱은 실행할 때
 `manifest.json`의 버전을 비교하고 새 데이터만 휴대폰 캐시에 저장합니다.
 
+v19.4부터 다음 선택 보조 데이터도 함께 갱신합니다.
+
+- `data/champions-learnsets.json`: Champions 포켓몬별 습득 가능 기술
+- `data/showdown-abilities.json`: 특성 이름과 효과 설명
+- `data/move-flavor-ko.json`: 기술 한국어 효과 설명
+- `data/ability-flavor-ko.json`: 특성 한국어 효과 설명
+
 `data/champions-mc.json`은 Regulation M-C 전용 보정 자료입니다. 신규 포켓몬,
 신규 메가폼, 신규 도구와 최신 특성이 들어 있으며 자동 갱신을 실행해도 지워지지
 않습니다. 새 규정 자료를 수동으로 고친 뒤 `npm run update`를 실행하면 해시와
