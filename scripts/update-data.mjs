@@ -48,7 +48,26 @@ async function download(key, source) {
   }
 }
 
-await Promise.all(Object.entries(sources).map(([key, source]) => download(key, source)));
+async function includeLocal(key, source) {
+  try {
+    const bytes = await readFile(path.join(root, source.path));
+    files[key] = {
+      path: source.path.replaceAll('\\\\', '/'),
+      version: dataVersion,
+      bytes: bytes.length,
+      sha256: createHash('sha256').update(bytes).digest('hex'),
+      source: source.source || 'Locally curated data'
+    };
+    process.stdout.write(`included ${key} (${bytes.length} bytes)\n`);
+  } catch (error) {
+    failures.push({ key, required: source.required !== false, error: error.message });
+    process.stderr.write(`failed ${key}: ${error.message}\n`);
+  }
+}
+
+await Promise.all(Object.entries(sources).map(([key, source]) =>
+  source.local ? includeLocal(key, source) : download(key, source)
+));
 
 const requiredFailures = failures.filter(item => item.required);
 if (requiredFailures.length) {

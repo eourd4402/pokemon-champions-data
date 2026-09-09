@@ -1,4 +1,10 @@
 {
+  "championsMc": {
+    "path": "data/champions-mc.json",
+    "local": true,
+    "source": "Curated from Pokémon Champions Regulation M-C release data",
+    "required": true
+  },
   "showdownPokedex": {
     "path": "data/showdown-pokedex.json",
     "url": "https://play.pokemonshowdown.com/data/pokedex.json",

@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": "2026.09.09.2",
+  "regulation": {
+    "id": "M-C",
+    "startsAt": "2026-09-09T02:00:00Z",
+    "endsAt": "2026-12-02T01:59:00Z"
+  },
+  "sources": [
+    { "name": "Pokémon 공식 Regulation Set M-C 안내", "url": "https://www.pokemon.com/us/news/get-ready-for-regulation-set-m-c-in-pokemon-champions" },
+    { "name": "Serebii Pokémon Champions 포켓몬 목록", "url": "https://www.serebii.net/pokemonchampions/pokemon.shtml" },
+    { "name": "Serebii Pokémon Champions 도구 목록", "url": "https://www.serebii.net/pokemonchampions/items.shtml" },
+    { "name": "OP.GG Pokémon Champions 도감·도구", "url": "https://op.gg/pokemon-champions" }
+  ],
+  "rosterAdditions": [
+    { "dex": 40, "en": "Wigglytuff", "ko": "푸크린" },
+    { "dex": 53, "en": "Persian", "ko": "페르시온" },
+    { "dex": 83, "en": "Farfetch'd", "ko": "파오리" },
+    { "dex": 122, "en": "Mr. Mime", "ko": "마임맨" },
+    { "dex": 317, "en": "Swalot", "ko": "꿀꺽몬" },
+    { "dex": 373, "en": "Salamence", "ko": "보만다" },
+    { "dex": 673, "en": "Gogoat", "ko": "고고트" },
+    { "dex": 768, "en": "Golisopod", "ko": "갑주무사" },
+    { "dex": 812, "en": "Rillaboom", "ko": "고릴타" },
+    { "dex": 815, "en": "Cinderace", "ko": "에이스번" },
+    { "dex": 818, "en": "Inteleon", "ko": "인텔리레온" },
+    { "dex": 828, "en": "Thievul", "ko": "폭슬라이" },
+    { "dex": 849, "en": "Toxtricity", "ko": "스트린더" },
+    { "dex": 853, "en": "Grapploct", "ko": "케오퍼스" },
+    { "dex": 863, "en": "Perrserker", "ko": "나이킹" },
+    { "dex": 865, "en": "Sirfetch'd", "ko": "창파나이트" },
+    { "dex": 871, "en": "Pincurchin", "ko": "찌르성게" },
+    { "dex": 876, "en": "Indeedee", "ko": "에써르" },
+    { "dex": 930, "en": "Arboliva", "ko": "올리르바" },
+    { "dex": 931, "en": "Squawkabilly", "ko": "시비꼬" },
+    { "dex": 943, "en": "Mabosstiff", "ko": "마피티프" },
+    { "dex": 998, "en": "Baxcalibur", "ko": "드닐레이브" }
+  ],
+  "alternateForms": [
+    { "id": "persianalola", "base": "Persian", "label": "알로라의 모습", "types": ["Dark"] },
+    { "id": "toxtricitylowkey", "base": "Toxtricity", "label": "로우한 모습", "types": ["Electric", "Poison"] },
+    { "id": "indeedeef", "base": "Indeedee", "label": "암컷", "types": ["Psychic", "Normal"] },
+    { "id": "squawkabillyblue", "base": "Squawkabilly", "label": "블루 페더", "types": ["Normal", "Flying"] },
+    { "id": "squawkabillyyellow", "base": "Squawkabilly", "label": "옐로 페더", "types": ["Normal", "Flying"] },
+    { "id": "squawkabillywhite", "base": "Squawkabilly", "label": "화이트 페더", "types": ["Normal", "Flying"] }
+  ],
+  "megaForms": {
+    "salamencemega": {
+      "base": "Salamence", "name": "Salamence-Mega", "label": "메가보만다", "stone": "salamencite",
+      "baseStats": { "hp": 95, "atk": 145, "def": 130, "spa": 120, "spd": 90, "spe": 120 },
+      "types": ["Dragon", "Flying"], "abilities": ["Aerilate"]
+    },
+    "absolmegaz": {
+      "base": "Absol", "name": "Absol-Mega-Z", "label": "메가앱솔 Z", "stone": "absolitez",
+      "baseStats": { "hp": 65, "atk": 154, "def": 60, "spa": 75, "spd": 60, "spe": 151 },
+      "types": ["Dark", "Ghost"], "abilities": ["Sharpness"]
+    },
+    "garchompmegaz": {
+      "base": "Garchomp", "name": "Garchomp-Mega-Z", "label": "메가한카리아스 Z", "stone": "garchompitez",
+      "baseStats": { "hp": 108, "atk": 130, "def": 85, "spa": 141, "spd": 85, "spe": 151 },
+      "types": ["Dragon"], "abilities": ["Levitate"]
+    },
+    "lucariomegaz": {
+      "base": "Lucario", "name": "Lucario-Mega-Z", "label": "메가루카리오 Z", "stone": "lucarionitez",
+      "baseStats": { "hp": 70, "atk": 100, "def": 70, "spa": 164, "spd": 70, "spe": 151 },
+      "types": ["Fighting", "Steel"], "abilities": ["Aura Guard"]
+    },
+    "golisopodmega": {
+      "base": "Golisopod", "name": "Golisopod-Mega", "label": "메가갑주무사", "stone": "golisopite",
+      "baseStats": { "hp": 75, "atk": 150, "def": 175, "spa": 70, "spd": 120, "spe": 40 },
+      "types": ["Bug", "Steel"], "abilities": ["Tough Claws"]
+    },
+    "baxcaliburmega": {
+      "base": "Baxcalibur", "name": "Baxcalibur-Mega", "label": "메가드닐레이브", "stone": "baxcalibrite",
+      "baseStats": { "hp": 115, "atk": 175, "def": 117, "spa": 105, "spd": 101, "spe": 87 },
+      "types": ["Dragon", "Ice"], "abilities": ["Thermal Exchange"]
+    }
+  },
+  "items": {
+    "leek": { "name": "Leek", "nameKo": "대파", "shortDesc": "파오리와 창파나이트의 급소율을 2랭크 올린다." },
+    "rockyhelmet": { "name": "Rocky Helmet", "nameKo": "울퉁불퉁멧", "shortDesc": "접촉한 공격자에게 최대 HP의 1/6만큼 피해를 준다." },
+    "airballoon": { "name": "Air Balloon", "nameKo": "풍선", "shortDesc": "공격에 맞기 전까지 땅타입 기술에 면역이 된다." },
+    "redcard": { "name": "Red Card", "nameKo": "레드카드", "shortDesc": "공격에 맞으면 공격자를 강제로 교체시킨다." },
+    "bindingband": { "name": "Binding Band", "nameKo": "조임밴드", "shortDesc": "조이기 상태의 매 턴 피해를 최대 HP의 1/6로 높인다." },
+    "ejectbutton": { "name": "Eject Button", "nameKo": "탈출버튼", "shortDesc": "공격에 맞으면 지닌 포켓몬이 교체된다." },
+    "normalgem": { "name": "Normal Gem", "nameKo": "노말주얼", "shortDesc": "처음 사용하는 노말타입 기술의 위력을 1.3배로 높인다." },
+    "salamencite": { "name": "Salamencite", "nameKo": "보만다나이트", "shortDesc": "보만다를 메가보만다로 메가진화시킨다.", "megaStone": "Salamence-Mega" },
+    "terrainextender": { "name": "Terrain Extender", "nameKo": "그라운드코트", "shortDesc": "지닌 포켓몬이 전개한 필드의 지속 시간을 8턴으로 늘린다." },
+    "electricseed": { "name": "Electric Seed", "nameKo": "일렉트릭시드", "shortDesc": "일렉트릭필드에서 방어가 1랭크 오른다." },
+    "psychicseed": { "name": "Psychic Seed", "nameKo": "사이코시드", "shortDesc": "사이코필드에서 특수방어가 1랭크 오른다." },
+    "mistyseed": { "name": "Misty Seed", "nameKo": "미스트시드", "shortDesc": "미스트필드에서 특수방어가 1랭크 오른다." },
+    "grassyseed": { "name": "Grassy Seed", "nameKo": "그래스시드", "shortDesc": "그래스필드에서 방어가 1랭크 오른다." },
+    "absolitez": { "name": "Absolite Z", "nameKo": "앱솔나이트 Z", "shortDesc": "앱솔을 메가앱솔 Z로 메가진화시킨다.", "megaStone": "Absol-Mega-Z" },
+    "garchompitez": { "name": "Garchompite Z", "nameKo": "한카리아스나이트 Z", "shortDesc": "한카리아스를 메가한카리아스 Z로 메가진화시킨다.", "megaStone": "Garchomp-Mega-Z" },
+    "lucarionitez": { "name": "Lucarionite Z", "nameKo": "루카리오나이트 Z", "shortDesc": "루카리오를 메가루카리오 Z로 메가진화시킨다.", "megaStone": "Lucario-Mega-Z" },
+    "golisopite": { "name": "Golisopite", "nameKo": "갑주무사나이트", "shortDesc": "갑주무사를 메가갑주무사로 메가진화시킨다.", "megaStone": "Golisopod-Mega" },
+    "baxcalibrite": { "name": "Baxcalibrite", "nameKo": "드닐레이브나이트", "shortDesc": "드닐레이브를 메가드닐레이브로 메가진화시킨다.", "megaStone": "Baxcalibur-Mega" }
+  }
+}
