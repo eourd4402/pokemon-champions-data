@@ -27,6 +27,13 @@ v19.4부터 다음 선택 보조 데이터도 함께 갱신합니다.
 - `data/move-flavor-ko.json`: 기술 한국어 효과 설명
 - `data/ability-flavor-ko.json`: 특성 한국어 효과 설명
 
+## v19.5 M-C 보강
+
+- M-C 추가 포켓몬 명단에 빠르모트를 포함합니다.
+- 냐오닉스·에써르·대쓰여너의 배틀 데이터가 다른 암수 폼을 구분합니다.
+- `showdown-items.json`은 Pokémon Showdown에 등록된 전체 배틀 도구 원본입니다.
+  앱에서는 몬스터볼을 제외하고, 메가스톤은 메가폼 자동 장착에만 사용합니다.
+
 `data/champions-mc.json`은 Regulation M-C 전용 보정 자료입니다. 신규 포켓몬,
 신규 메가폼, 신규 도구와 최신 특성이 들어 있으며 자동 갱신을 실행해도 지워지지
 않습니다. 새 규정 자료를 수동으로 고친 뒤 `npm run update`를 실행하면 해시와

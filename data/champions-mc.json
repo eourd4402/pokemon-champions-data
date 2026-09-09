@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "dataVersion": "2026.09.09.2",
+  "dataVersion": "2026.09.09.3",
   "regulation": {
     "id": "M-C",
     "startsAt": "2026-09-09T02:00:00Z",
@@ -31,6 +31,7 @@
     { "dex": 865, "en": "Sirfetch'd", "ko": "창파나이트" },
     { "dex": 871, "en": "Pincurchin", "ko": "찌르성게" },
     { "dex": 876, "en": "Indeedee", "ko": "에써르" },
+    { "dex": 923, "en": "Pawmot", "ko": "빠르모트" },
     { "dex": 930, "en": "Arboliva", "ko": "올리르바" },
     { "dex": 931, "en": "Squawkabilly", "ko": "시비꼬" },
     { "dex": 943, "en": "Mabosstiff", "ko": "마피티프" },
@@ -40,6 +41,8 @@
     { "id": "persianalola", "base": "Persian", "label": "알로라의 모습", "types": ["Dark"] },
     { "id": "toxtricitylowkey", "base": "Toxtricity", "label": "로우한 모습", "types": ["Electric", "Poison"] },
     { "id": "indeedeef", "base": "Indeedee", "label": "암컷", "types": ["Psychic", "Normal"] },
+    { "id": "meowsticf", "base": "Meowstic", "label": "암컷", "types": ["Psychic"] },
+    { "id": "basculegionf", "base": "Basculegion", "label": "암컷", "types": ["Water", "Ghost"] },
     { "id": "squawkabillyblue", "base": "Squawkabilly", "label": "블루 페더", "types": ["Normal", "Flying"] },
     { "id": "squawkabillyyellow", "base": "Squawkabilly", "label": "옐로 페더", "types": ["Normal", "Flying"] },
     { "id": "squawkabillywhite", "base": "Squawkabilly", "label": "화이트 페더", "types": ["Normal", "Flying"] }
