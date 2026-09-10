@@ -1,133 +1,133 @@
 {
   "schemaVersion": 1,
-  "dataVersion": "2026.09.09.7",
-  "generatedAt": "2026-09-09T18:32:47.432Z",
+  "dataVersion": "2026.09.10.8",
+  "generatedAt": "2026-09-10T18:30:29.766Z",
   "files": {
     "championsMc": {
       "path": "data/champions-mc.json",
-      "version": "2026.09.09.7",
+      "version": "2026.09.10.8",
       "bytes": 7713,
       "sha256": "cfccf4b1f15e00fd09a4ac223b81e22791dcd6aafe8a31659fa8e3e276ac8f45",
       "source": "Curated from Pokémon Champions Regulation M-C release data"
     },
-    "showdownItems": {
-      "path": "data/showdown-items.json",
-      "version": "2026.09.09.7",
-      "bytes": 167834,
-      "sha256": "143b5822fb699bb7289bd14d2f58cd8d439ac0d83e28c1fa8342018c3473966a",
-      "source": "https://play.pokemonshowdown.com/data/items.js"
-    },
-    "abilitiesCsv": {
-      "path": "data/abilities.csv",
-      "version": "2026.09.09.7",
-      "bytes": 7074,
-      "sha256": "74c3588ad48e08e54ff01f432899a4028c3e91508bbd53201df85e1f6b9e9ef3",
-      "source": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/abilities.csv"
-    },
-    "itemsCsv": {
-      "path": "data/items.csv",
-      "version": "2026.09.09.7",
-      "bytes": 59564,
-      "sha256": "f08cd6dc30b447cb91cbe9232c79052e8521f32f6105bb1489b5bfabf4ca3241",
-      "source": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/items.csv"
-    },
-    "legacyKoreanNames": {
-      "path": "data/korean_names.txt",
-      "version": "2026.09.09.7",
-      "bytes": 14545,
-      "sha256": "b842d1be30e253f94468d9726286757c2a9fcf563b5d202c97f78af2815c2c52",
-      "source": "https://raw.githubusercontent.com/jayckaiser/korean-pokemon/master/korean_pokemon/names/ko.txt"
-    },
     "championsLearnsets": {
       "path": "data/champions-learnsets.json",
-      "version": "2026.09.09.7",
+      "version": "2026.09.10.8",
       "bytes": 184266,
       "sha256": "9e52b634b35b052c0342791302fc126f8ed440a3038137ec17fae531300dca57",
       "source": "https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/mods/champions/learnsets.ts"
     },
+    "showdownPokedex": {
+      "path": "data/showdown-pokedex.json",
+      "version": "2026.09.10.8",
+      "bytes": 524186,
+      "sha256": "b2ecaa0d6e9271edbaa57bf04338ba8a2a6deab105789ae163c419e6cc5ad502",
+      "source": "https://play.pokemonshowdown.com/data/pokedex.json"
+    },
+    "showdownAbilities": {
+      "path": "data/showdown-abilities.json",
+      "version": "2026.09.10.8",
+      "bytes": 113643,
+      "sha256": "66cab67864f21da7412fc1452eb4eb652dfff7464f8e0797bda9b8f88352d017",
+      "source": "https://play.pokemonshowdown.com/data/abilities.js"
+    },
+    "abilitiesCsv": {
+      "path": "data/abilities.csv",
+      "version": "2026.09.10.8",
+      "bytes": 7074,
+      "sha256": "74c3588ad48e08e54ff01f432899a4028c3e91508bbd53201df85e1f6b9e9ef3",
+      "source": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/abilities.csv"
+    },
+    "showdownItems": {
+      "path": "data/showdown-items.json",
+      "version": "2026.09.10.8",
+      "bytes": 168010,
+      "sha256": "f01660f0015395ed30473f4ed5b79c6087208bf10f58f037312fb7bb91a018b1",
+      "source": "https://play.pokemonshowdown.com/data/items.js"
+    },
+    "showdownMoves": {
+      "path": "data/showdown-moves.json",
+      "version": "2026.09.10.8",
+      "bytes": 490717,
+      "sha256": "30f37000a091a4257eb7c85f812ed17b3748aaee55ac6dce2ac8285ecca71cd7",
+      "source": "https://play.pokemonshowdown.com/data/moves.json"
+    },
+    "abilityNamesCsv": {
+      "path": "data/ability_names.csv",
+      "version": "2026.09.10.8",
+      "bytes": 65239,
+      "sha256": "8acb80c42210f86ae747dc3347b060d69cd2574a9dbfaf74774ae632ca6348da",
+      "source": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/ability_names.csv"
+    },
     "championsItems": {
       "path": "data/champions-items.ts",
-      "version": "2026.09.09.7",
+      "version": "2026.09.10.8",
       "bytes": 15392,
       "sha256": "64245bd903fa04da011abcd74d4eb7e20703824947e79fe4a12e0f0bbd774006",
       "source": "https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/mods/champions/items.ts"
     },
+    "itemsCsv": {
+      "path": "data/items.csv",
+      "version": "2026.09.10.8",
+      "bytes": 59564,
+      "sha256": "f08cd6dc30b447cb91cbe9232c79052e8521f32f6105bb1489b5bfabf4ca3241",
+      "source": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/items.csv"
+    },
+    "championsMoves": {
+      "path": "data/champions-moves.ts",
+      "version": "2026.09.10.8",
+      "bytes": 17881,
+      "sha256": "de49044b0fe86d1fb2785635842bc975c6844cb02375d4e2882d9060db932258",
+      "source": "https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/mods/champions/moves.ts"
+    },
     "movesCsv": {
       "path": "data/moves.csv",
-      "version": "2026.09.09.7",
+      "version": "2026.09.10.8",
       "bytes": 42322,
       "sha256": "8aafd37bf78f19471495c05b201545180f50f0a08a2a2a844d69f9837dd39ac9",
       "source": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/moves.csv"
     },
-    "showdownAbilities": {
-      "path": "data/showdown-abilities.json",
-      "version": "2026.09.09.7",
-      "bytes": 113589,
-      "sha256": "126960d2761919942821ec302ffc4e504fd986a31cb7618050efdf375c0e83df",
-      "source": "https://play.pokemonshowdown.com/data/abilities.js"
+    "abilityFlavorKo": {
+      "path": "data/ability-flavor-ko.json",
+      "version": "2026.09.10.8",
+      "bytes": 21402,
+      "sha256": "452edd46cd3d1704389a61b3a4ef0a364e530b79160985ba21b1bd7a81ccea8a",
+      "source": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/ability_flavor_text.csv"
+    },
+    "legacyKoreanNames": {
+      "path": "data/korean_names.txt",
+      "version": "2026.09.10.8",
+      "bytes": 14545,
+      "sha256": "b842d1be30e253f94468d9726286757c2a9fcf563b5d202c97f78af2815c2c52",
+      "source": "https://raw.githubusercontent.com/jayckaiser/korean-pokemon/master/korean_pokemon/names/ko.txt"
+    },
+    "moveFlavorKo": {
+      "path": "data/move-flavor-ko.json",
+      "version": "2026.09.10.8",
+      "bytes": 90392,
+      "sha256": "9d5c6afaf975d66b7269a38de39957eef1479a3936f5b9afbb0f2a5e9c01d806",
+      "source": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/move_flavor_text.csv"
+    },
+    "moveNamesCsv": {
+      "path": "data/move_names.csv",
+      "version": "2026.09.10.8",
+      "bytes": 202670,
+      "sha256": "99e23ee38ea53d1473474d463b87651deac3cd4928750f8186feae66da45c147",
+      "source": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/move_names.csv"
     },
     "speciesNamesCsv": {
       "path": "data/pokemon_species_names.csv",
-      "version": "2026.09.09.7",
+      "version": "2026.09.10.8",
       "bytes": 404502,
       "sha256": "820cde17074cdb1c2b0595c997fb8f998e773bd5da3bb525dec85703c86c5fd9",
       "source": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/pokemon_species_names.csv"
     },
     "itemNamesCsv": {
       "path": "data/item_names.csv",
-      "version": "2026.09.09.7",
+      "version": "2026.09.10.8",
       "bytes": 487794,
       "sha256": "7b1b4fe6edf7946110050a5dddabf62c3a1dc3e1616099c4ae97abcb5ebd0f97",
       "source": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/item_names.csv"
-    },
-    "abilityNamesCsv": {
-      "path": "data/ability_names.csv",
-      "version": "2026.09.09.7",
-      "bytes": 65239,
-      "sha256": "8acb80c42210f86ae747dc3347b060d69cd2574a9dbfaf74774ae632ca6348da",
-      "source": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/ability_names.csv"
-    },
-    "showdownPokedex": {
-      "path": "data/showdown-pokedex.json",
-      "version": "2026.09.09.7",
-      "bytes": 524189,
-      "sha256": "4812d63e9b44c07826d063d84000a73fcd61994308694346134d48e1fec32d51",
-      "source": "https://play.pokemonshowdown.com/data/pokedex.json"
-    },
-    "moveNamesCsv": {
-      "path": "data/move_names.csv",
-      "version": "2026.09.09.7",
-      "bytes": 202670,
-      "sha256": "99e23ee38ea53d1473474d463b87651deac3cd4928750f8186feae66da45c147",
-      "source": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/move_names.csv"
-    },
-    "showdownMoves": {
-      "path": "data/showdown-moves.json",
-      "version": "2026.09.09.7",
-      "bytes": 490603,
-      "sha256": "1711c32b07623c745b791111342c1999f57a666e0936ed8aab8e2fac617f8be2",
-      "source": "https://play.pokemonshowdown.com/data/moves.json"
-    },
-    "abilityFlavorKo": {
-      "path": "data/ability-flavor-ko.json",
-      "version": "2026.09.09.7",
-      "bytes": 21402,
-      "sha256": "452edd46cd3d1704389a61b3a4ef0a364e530b79160985ba21b1bd7a81ccea8a",
-      "source": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/ability_flavor_text.csv"
-    },
-    "championsMoves": {
-      "path": "data/champions-moves.ts",
-      "version": "2026.09.09.7",
-      "bytes": 17786,
-      "sha256": "5467c62b1936d99d0f433809d844f56c94a507277c85fdc1cd23e53711de4616",
-      "source": "https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/mods/champions/moves.ts"
-    },
-    "moveFlavorKo": {
-      "path": "data/move-flavor-ko.json",
-      "version": "2026.09.09.7",
-      "bytes": 90392,
-      "sha256": "9d5c6afaf975d66b7269a38de39957eef1479a3936f5b9afbb0f2a5e9c01d806",
-      "source": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/move_flavor_text.csv"
     }
   },
   "optionalFailures": []
